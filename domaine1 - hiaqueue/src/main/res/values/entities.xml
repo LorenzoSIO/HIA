@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="consultation_types">
+        <item>Echo abdominale</item>
+        <item>Echo thyroidienne</item>
+        <item>Echographie 1er trimestre</item>
+        <item>Echographie 2e trimestre</item>
+        <item>Echographie 3e trimestre</item>
+        <item>IRM genou</item>
+        <item>Mammographie</item>
+        <item>Radio pulmonaire</item>
+        <item>Radio panoramique dentaire</item>
+        <item>Radio genou</item>
+    </string-array>
+</resources>

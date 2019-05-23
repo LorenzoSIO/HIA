@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HIA App Name</string>
+    <string name="common_error_api_failed">Erreur 500 - Serveur</string>
+    <string name="common_text_empty"> </string>
+</resources>

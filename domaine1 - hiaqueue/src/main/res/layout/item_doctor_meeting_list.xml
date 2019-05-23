@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/item">
+
+    <ImageView
+        android:id="@+id/item_meeting_icon"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:src="@drawable/ic_hourglass"
+        android:padding="@dimen/dp5"/>
+
+    <TextView
+        android:id="@+id/item_consultation_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp8"
+        android:textSize="@dimen/dp20"
+        android:textStyle="bold"
+        android:text="Echo thyroidienne"
+        android:layout_toRightOf="@id/item_meeting_icon"/>
+
+    <TextView
+        android:id="@+id/item_meeting_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dp8"
+        android:textSize="@dimen/dp12"
+        android:text="Ajouté par Cacciato Lorenzo"
+        android:layout_below="@id/item_consultation_name"
+        android:layout_alignLeft="@id/item_consultation_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/item_meeting_request_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp10"
+        android:paddingTop="@dimen/dp5"
+        android:text="le 13.11.18"
+        android:layout_below="@id/item_meeting_author"
+        android:layout_alignLeft="@id/item_meeting_author"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/item_meeting_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dp16"/>
+
+</RelativeLayout>

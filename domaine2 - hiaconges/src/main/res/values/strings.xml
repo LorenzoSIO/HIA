@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">HIA Congés</string>
+
+    <!-- HomeView -->
+    <string name="home_onboard_title">HIA Congés</string>
+    <string name="home_onboard_subtitle">Bienvenue sur HIACongés, votre application de prise de congés par Hopital HIA
+    </string>
+
+    <string name="home_sign_in_button_title">SE CONNECTER</string>
+    <string name="home_sign_in_email_title">Votre Email</string>
+    <string name="home_sign_in_password_title">Votre Mot de passe</string>
+
+    <!-- DoctorAbsencePanel (doctor_request_recycler+?) -->
+    <string name="doctor_request_recycler_onboard_title">Bonjour, Dr. %s</string>
+    <string name="doctor_request_recycler_onboard_button_title">Nouveau Congé</string>
+    <string name="doctor_request_recycler_section_title">Vos congés</string>
+    <string name="doctor_request_recycler_item_absence_request_planned">"Absent le %s</string>
+    <string name="doctor_request_recycler_item_absence_request_created">"Proposé le %s</string>
+
+    <!-- RHAbsencePanel (doctor_request_recycler+?) -->
+    <string name="rh_request_recycler_onboard_title">Bonjour, RH. %s</string>
+    <string name="rh_request_recycler_onboard_button_title">Actualiser</string>
+    <string name="rh_request_recycler_section_title">Demandes de congés en attente</string>
+    <string name="rh_request_recycler_item_request_date">"Absent.e le %s</string>
+
+    <!-- DoctorAbsenceFormFragment (create_absence+?) -->
+    <string name="absence_request_details_onboard_title">Nouveau Congé</string>
+    <string name="absence_request_details_section_date_title">Choisir une date</string>
+    <string name="absence_request_details_section_reason_title">Raison</string>
+    <string name="doctor_request_details_ratio_title">Nombre d\'absents ce jour : ?</string>
+    <string name="doctor_request_details_ratio_description">Soit ?% du service</string>
+    <string name="absence_request_details_confirm_button_title">VALIDER LE %s</string>
+    <string name="absence_request_details_cancel_button_title">RETOUR</string>
+
+    <!-- Fragment details -->
+    <string name="common_fragment_details_name">Nom</string>
+    <string name="common_fragment_details_role">Métier</string>
+    <string name="common_fragment_details_planned_date">Absence au</string>
+    <string name="common_fragment_details_close_button_title">FERMER</string>
+    <string name="common_fragment_details_send_button_title">VALIDER</string>
+
+</resources>

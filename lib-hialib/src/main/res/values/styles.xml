@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/dp32</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="TextDescription">
+        <item name="android:textSize">@dimen/dp16</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="EnabledButton">
+        <item name="android:textSize">@dimen/dp16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="DisabledButton">
+        <item name="android:textSize">@dimen/dp16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorGray</item>
+    </style>
+
+    <style name="DoctorButton">
+        <item name="android:textSize">@dimen/dp16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorSecondary</item>
+    </style>
+
+    <style name="SectionTitle">
+        <item name="android:textSize">@dimen/dp16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="FullScreenDialogStyle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@color/colorWhite</item>
+
+   </style>
+
+</resources>

@@ -1,0 +1,1 @@
+include ':lib-hialib', ':lib-wheelpicker', ':domaine1 - hiaqueue', ':domaine2 - hiaconges', ':docs'

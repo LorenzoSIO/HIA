@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Common -->
+    <string name="common_app_name">HIA Radiologie</string>
+    <string name="action_settings"></string>
+
+    <!-- HomeView -->
+    <string name="home_onboard_title">HIA Radiologie</string>
+    <string name="home_onboard_subtitle">Bienvenue sur HIA Radiologie, votre application de prise de rendez-vous pour
+        l\'entité \'Radiologie\' de l\'hopital HIA.
+    </string>
+
+    <string name="home_creating_meeting_button_title">Nouveau rendez-vous</string>
+    <string name="home_toggle_patient_mode_title">Acceder à l\'espace patient</string>
+    <string name="home_toggle_doctor_mode_title">Acceder à l\'espace médecin</string>
+
+    <string name="doctor_home_sign_in_button_title">SE CONNECTER</string>
+    <string name="doctor_home_sign_in_email_title">Votre Email</string>
+    <string name="doctor_home_sign_in_password_title">Votre Mot de passe</string>
+
+    <!-- MeetingRequestFormView (meeting_form+?) -->
+    <string name="meeting_onboard_title">Nouveau Rendez-vous</string>
+    <string name="meeting_form_surname_label">Nom de famille</string>
+    <string name="meeting_form_surname_placeholder">Votre Nom</string>
+    <string name="meeting_form_lastname_label">Prenom</string>
+    <string name="meeting_form_lastname_placeholder">Votre Prénom</string>
+    <string name="meeting_form_email_label">Email</string>
+    <string name="meeting_form_email_placeholder">Votre Email</string>
+    <string name="meeting_form_consultation_type_title">Consultation</string>
+    <string name="meeting_form_time_estimation_title">Estimation temporelle: %d min</string>
+    <string name="meeting_form_period_preference_title">Préference</string>
+    <string name="meeting_form_send_button_title">VALIDER</string>
+    <string name="meeting_form_period_morning_toggle_button">Matin (9-12H)</string>
+    <string name="meeting_form_period_aftermoon_toggle_button">Après-Midi (13-17h)</string>
+    <string name="meeting_form_details_title">Details</string>
+    <string name="meeting_form_details_send_button_title">Confirmer la demande</string>
+    <string name="meeting_form_details_cancel_button_title">Modifier la demande</string>
+    <string name="meeting_form_consultation_type_loading">Chargement...</string>
+
+    <!-- DoctorRequestListView (doctor_request_recycler+?) -->
+    <string name="doctor_request_recycler_onboard_title">Bonjour, Dr. %s</string>
+    <string name="doctor_request_recycler_onboard_button_title">VOIR MON AGENDA</string>
+    <string name="doctor_request_recycler_section_title">Vos congés</string>
+    <string name="doctor_request_recycler_item_meeting_request_author">"Ajouté par %s %s</string>
+    <string name="doctor_request_recycler_item_meeting_request_date">"le %s</string>
+
+    <!-- DoctorCalendarView (doctor_request_recycler+?) -->
+    <string name="doctor_request_calendar_onboard_title">Mon Agenda</string>
+    <string name="doctor_request_calendar_onboard_button_title">RETOUR</string>
+    <string name="doctor_request_calendar_section_title">Demandes de rendez-vous validées</string>
+    <string name="doctor_request_calendar_item_meeting_request_author">"Ajouté par %s %s</string>
+    <string name="doctor_request_calendar_item_meeting_request_date">"le %s</string>
+
+    <!-- DoctorRequestDetailsFrament (doctor_request_details+?) -->
+    <string name="doctor_request_details_onboard_title">Prise de rendez-vous</string>
+    <string name="doctor_request_details_onboard_lastname_title">Nom</string>
+    <string name="doctor_request_details_onboard_surname_title">Prénom</string>
+    <string name="doctor_request_details_onboard_consultation_type_title">Type</string>
+    <string name="doctor_request_details_section_date_title">Choisir une date</string>
+    <string name="doctor_request_details_section_period_title">Choisir un horaire</string>
+    <string name="doctor_request_details_section_period_item">%d H</string>
+    <string name="doctor_request_details_confirm_button_title">VALIDER LE %s à %d H 00</string>
+    <string name="doctor_request_details_cancel_button_title">RETOUR</string>
+
+    <!-- Errors -->
+    <string name="common_hint_request_send">Demande envoyée !</string>
+
+</resources>

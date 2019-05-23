@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.patient.HomeActivity">
+
+    <TextView
+        android:id="@+id/doctor_request_onboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meeting_onboard_title"
+        android:layout_margin="@dimen/dp16"
+        style="@style/TextTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/dp8"
+        tools:layout_editor_absoluteY="95dp"
+        aigestudio:layout_constraintHorizontal_bias="0.5"/>
+
+    <TextView
+        android:id="@+id/meeting_form_surname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp16"
+        android:text="@string/meeting_form_surname_label"
+        app:layout_constraintTop_toBottomOf="@id/doctor_request_onboard_title"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/meeting_form_surname_input"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/meeting_form_surname_placeholder"
+        android:singleLine="true"
+        android:nextFocusDown="@id/meeting_form_lastname_input"
+        app:layout_constraintStart_toStartOf="@id/meeting_form_surname_label"
+        app:layout_constraintTop_toBottomOf="@id/meeting_form_surname_label"
+    />
+
+    <TextView
+        android:id="@+id/meeting_form_lastname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meeting_form_lastname_label"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/meeting_form_surname_label"/>
+
+    <EditText
+        android:id="@+id/meeting_form_lastname_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/meeting_form_lastname_placeholder"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="@id/meeting_form_lastname_label"
+        app:layout_constraintTop_toBottomOf="@id/meeting_form_lastname_label"
+        />
+
+    <TextView
+        android:id="@+id/meeting_form_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meeting_form_email_label"
+        android:layout_marginTop="@dimen/dp8"
+        app:layout_constraintStart_toStartOf="@id/meeting_form_surname_label"
+        app:layout_constraintTop_toBottomOf="@id/meeting_form_surname_input"/>
+
+    <EditText
+        android:id="@+id/meeting_form_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:hint="@string/meeting_form_email_placeholder"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="@id/meeting_form_email_label"
+        app:layout_constraintTop_toBottomOf="@id/meeting_form_email_label"/>
+
+    <TextView
+        android:id="@+id/meeting_form_consultation_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        style="@style/SectionTitle"
+        android:text="@string/meeting_form_consultation_type_title"
+        app:layout_constraintTop_toBottomOf="@id/meeting_form_email_input"
+        app:layout_constraintStart_toStartOf="@id/meeting_form_email_input"
+        />
+
+    <wheelpicker.aigestudio.WheelPicker
+        android:id="@+id/meeting_form_consultation_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalScrollbarPosition="left"
+        android:layout_margin="@dimen/dp8"
+        android:scrollbarThumbVertical="@drawable/scrollbar_style"
+        aigestudio:wheel_curved="true"
+        aigestudio:wheel_visible_item_count="3"
+        aigestudio:wheel_selected_item_text_color="@color/colorBlack"
+        aigestudio:wheel_item_space="@dimen/dp16"
+        aigestudio:wheel_cyclic="true"
+        app:layout_constraintTop_toBottomOf="@id/meeting_form_consultation_type_title"
+        />
+
+    <TextView
+         android:id="@+id/meeting_form_consultation_estimation_time"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/dp25"
+         android:layout_marginLeft="@dimen/dp16"
+         android:text="@string/meeting_form_time_estimation_title"
+         app:layout_constraintTop_toBottomOf="@id/meeting_form_consultation_type_list"
+         app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/meeting_form_send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meeting_form_send_button_title"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:enabled="false"
+        android:onClick="onSubmitForm"
+        style="@style/DisabledButton"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meeting_form_consultation_type_list"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeActivity">
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="@dimen/dp250"
+            android:layout_height="@dimen/dp220"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <TextView
+            android:id="@+id/home_onboard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:text="@string/home_onboard_title"
+            style="@style/TextTitle"
+            app:layout_constraintEnd_toEndOf="@id/home_icon"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@id/home_icon"
+            app:layout_constraintTop_toBottomOf="@id/home_icon" />
+
+        <TextView
+            android:id="@+id/home_onboard_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp32"
+            android:layout_marginRight="@dimen/dp32"
+            android:text="@string/home_onboard_subtitle"
+            app:layout_constraintEnd_toEndOf="@id/home_onboard_title"
+            app:layout_constraintStart_toStartOf="@id/home_onboard_title"
+            app:layout_constraintTop_toBottomOf="@id/home_onboard_title" />
+
+        <FrameLayout
+           android:id="@+id/root_frame"
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:layout_marginTop="@dimen/dp16"
+           android:layout_marginLeft="@dimen/dp32"
+           android:layout_marginRight="@dimen/dp32"
+           android:layout_marginBottom="@dimen/dp16"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/home_onboard_subtitle"
+           app:layout_constraintBottom_toTopOf="@+id/home_toggle_mode_switch_button"/>
+
+        <TextView
+            android:id="@+id/home_toggle_mode_switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp24"
+            android:layout_marginBottom="@dimen/dp25"
+            android:text="@string/home_toggle_doctor_mode_title"
+            app:layout_constraintEnd_toEndOf="@id/root_frame"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
